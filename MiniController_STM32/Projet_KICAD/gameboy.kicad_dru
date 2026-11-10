@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "USB-C J12 - espacement pads"
+    (constraint clearance (min 0.15mm))
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('J12') && B.memberOfFootprint('J12') && A.Net != B.Net")
+)
